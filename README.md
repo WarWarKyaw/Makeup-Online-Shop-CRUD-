@@ -1,5 +1,5 @@
 # Makeup-Online-Shop-CRUD-
-This project is a CRUD sample project for my OJT project in GIC  that  is created using MySQl and PHP.
+This project is a CRUD sample project for my OJT project in GIC  that  is created by using MySQl and PHP.
 
 Requirements
 

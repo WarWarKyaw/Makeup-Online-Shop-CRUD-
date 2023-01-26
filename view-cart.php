@@ -8,88 +8,30 @@ include("admin/confs/config.php");
 
 ?>
 <!doctype html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <title>View Cart</title>
     <link rel="stylesheet" href="css/UserStyle.css">
     <style>
-        /* .remove {
-  color: #fff;
-  background-color: #dc3545;
-  border-color: #dc3545;
-  display: inline-block;
-    font-weight: 300;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: 0.3rem 0.7rem;
-    font-size: 0.8rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    width: 70px;
-    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    padding: 10px;
-} */
-
-        .counter {
-            width: 100px;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        span{
+            width: 25px;
+         padding:13px;
+           background: #cc828b;
+           border-radius: 2px;
+        
+        }
+        .down, .up{
+            font-size:1.5rem;
+            /* font-weight:bold; */
+        }
+        input[type=submit]{
+            padding: 5px 15px;
+            border-radius: 2px;
         }
 
-        .counter input {
-            width: 30px;
-            border: 0;
-            line-height: 30px;
-            font-size: 20px;
-            text-align: center;
-            background: #0052cc;
-            color: #fff;
-            appearance: none;
-            outline: 0;
-        }
-
-        .counter span {
-            display: block;
-            font-size: 25px;
-            padding: 0 10px;
-            cursor: pointer;
-            color: #0052cc;
-            user-select: none;
-        }
     </style>
-    <!-- <script type="text/javascript">
-        function increaseCount(a, b) {
-            var input = b.previousElementSibling;
-            var value = parseInt(input.value, 10);
-            value = isNaN(value) ? 0 : value;
-            value++;
-            input.value = value;
 
-        }
-
-        function decreaseCount(a, b) {
-            var input = b.nextElementSibling;
-            var value = parseInt(input.value, 10);
-            if (value > 1) {
-                value = isNaN(value) ? 0 : value;
-                value--;
-                input.value = value;
-
-
-            }
-
-        }
-    </script>
- -->
 
 </head>
 
@@ -131,7 +73,7 @@ include("admin/confs/config.php");
                         <div class="counter">
 
                             <a href="remove-from-cart.php?id=<?php echo $id ?>" class="down">-</a>
-                            <input type="text" value="<?php echo $qty ?>">
+                            <span><?php echo $qty ?></span>
                             <a href="increase-quantity.php?id=<?php echo $id ?>" class="up">+</a>
 
                         </div>
@@ -178,8 +120,3 @@ include("admin/confs/config.php");
 
 </html>
 
-<!-- <script>
-    function remove() {
-        document.getElementById($id).innerHTML = "";
-    }
-</script> -->

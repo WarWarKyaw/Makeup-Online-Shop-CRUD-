@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +24,7 @@
     ?>
     <div class="detail">
     <a href="index.php" class="back">&laquo; Go Back</a>
-    <img src="admin/covers/<?php echo $row['cover'] ?>">
+    <img src="admin/covers/<?php echo $row['cover'] ?>" alt="productImage">
     <h2><?php echo $row['title'] ?></h2>
     <i><b><?php echo $row['brand'] ?></b></i>
    <br><br> <b>$<?php echo $row['price'] ?></b>

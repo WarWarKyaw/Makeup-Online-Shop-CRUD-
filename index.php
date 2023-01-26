@@ -16,10 +16,8 @@ $cat_id");
  }
  $cats = mysqli_query($conn, "SELECT * FROM categories");
 ?>
-
-
 <!doctype html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
  <title>Makeup Store</title>
  <link rel="stylesheet" href="css/UserStyle.css">
@@ -49,7 +47,7 @@ $cat_id");
  <ul class="products">
  <?php while($row = mysqli_fetch_assoc($products)): ?>
  <li>
- <img src="admin/covers/<?php echo $row['cover'] ?>" height="150">
+ <img src="admin/covers/<?php echo $row['cover'] ?>" height="150" alt="productImage">
  <b>
  <a href="product-detail.php?id=<?php echo $row['id'] ?>" class="title">
  <?php echo $row['title'] ?>

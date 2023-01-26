@@ -1,0 +1,256 @@
+html {
+    background: #95A5A6;
+   }
+   body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 900px;
+    background: #fff;
+    border: 4px solid #f58d85;
+    margin: 20px auto;
+   }
+   h1 {
+    padding: 10px;
+    font-size: 21px;
+    /* background: #2C3E50; */
+    background-color: #f58d85;
+    background:#f58d85 ;
+    margin: 0;
+    color: #fff;
+   }
+   ul.list {
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+   }
+   ul.list li {
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+   }
+   ul.list b {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #2980B9;
+   }
+   ul.list i, ul.list small {
+    color: #888;
+    font-size: 12px;
+    margin-right: 10px;
+   }
+   ul.list span {
+    color: #8E44AD;
+   }
+   ul.list div {
+    margin: 5px 0;
+    font-size: 13px;
+    line-height: 1.5em;
+    color: #555;
+}
+
+ul.list img {
+    margin-left: 20px;
+   }
+   ul.list a {
+    color: #2980B9;
+   }
+   ul.list a.del {
+    color: #D35400;
+   }
+   a.new {
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+    width: 160px;
+    margin: 10px;
+    color: #fff;
+    background: #cc828b;
+    border: 1px solid #ccc;
+    text-decoration: none;
+   }
+   form {
+    margin: 20px;
+   }
+   form label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+   }
+   input[type=text],
+   input[type=password],
+   textarea,
+   select {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #ddd;
+    padding: 6px;
+    width: 300px;
+    background: #fff;
+   }
+   textarea {
+    height: 100px;
+   }
+   input[type=submit] {
+    /* padding: 10px 24px;
+    margin-right: 10px;
+    color: #fff;
+    background: #cc828b;
+    border: 1px solid #ccc;
+    display: block;
+   text-align: center; */
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+    width: 160px;
+    margin: 10px;
+    color: #fff;
+    background: #cc828b;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+
+ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background: #16A085; */
+    background: #cc828b;
+  }
+  
+  ul.menu li {
+    float: left;
+    border-right: 1px solid #f58d85;;
+  }
+  
+  ul.menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  ul.menu a:hover {
+    background: #f58d85;
+  }
+  
+  ul.orders {
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+    line-height: 1.5em;
+  }
+  
+  ul.orders li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  
+  ul.orders .order {
+    float: left;
+    width: 300px;
+    border-right: 1px dotted #ddd;
+    margin-right: 20px;
+  }
+  
+  ul.orders .items {
+    float: left;
+    width: 500px;
+  }
+  
+  ul.orders b,
+  ul.orders i,
+  ul.orders span {
+    display: block;
+  }
+  
+  ul.orders .items a {
+    font-weight: normal;
+    margin-right: 6px;
+  }
+  
+  ul.orders .items b {
+    border-bottom: 1px dotted #ddd;
+    line-height: 1.8em;
+  }
+  
+  ul.orders li.delivered {
+    color: #999;
+  }
+  
+  li.delivered .order b,
+  li.delivered .order i,
+  li.delivered .order p,
+  li.delivered .order span {
+    text-decoration: line-through;
+  }
+
+  .registration-form { 
+    margin: 20px; 
+   } 
+   .registration-form h2 { 
+    margin: 40px 0 10px 0; 
+    padding: 0 0 5px 0; 
+    border-bottom: 1px solid #ddd; 
+    font-size: 18px; 
+    color: #C0392B; 
+   } 
+   .back{
+    text-decoration: none;
+   }
+  
+
+
+.btn {
+    display: inline-block;
+    font-weight: 300;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    width:35px;
+
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.del {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+  
+}
+
+   .edit {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    
+}
+
+ 
+a:-webkit-any-link{
+  text-decoration: none;
+}
+.products{
+  justify-content: left;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.1rem;
+}
+
+  
+
+  
+
+    

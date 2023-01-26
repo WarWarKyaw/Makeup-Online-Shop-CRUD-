@@ -2,5 +2,4 @@
 session_start();
 $id = $_GET['id'];
 $_SESSION['cart'][$id]++;
-
 header("location: view-cart.php");

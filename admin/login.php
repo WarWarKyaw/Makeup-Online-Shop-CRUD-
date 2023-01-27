@@ -17,10 +17,20 @@ if (isset($_POST['login'])) {
         if (password_verify($password, $hashed_password)) {
 
             $_SESSION['auth'] = true;
-            header("location: product-list.php");
+            header("location: welcome.php");
+        }
+
+        else{
+            echo "<script type='text/javascript'>alert(\"Wrong  Password\")</script>";
+            include("index.php");
         }
     } else {
+        echo "<script type='text/javascript'>alert(\"Wrong Username or Password\")</script>";
+      
+        include("index.php");
+      
+   
 
-        header("location: index.php");
+        
     }
 }
